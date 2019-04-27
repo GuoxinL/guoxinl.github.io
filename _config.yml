@@ -7,7 +7,7 @@
 
 # Site settings
 title: Guoxin
-brief-intro: Front-end Dev Engineer
+brief-intro: Back-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://guoxinl.github.io" # the base hostname & protocol for your site
 
@@ -56,5 +56,5 @@ tag_dir: tag/
 excerpt_separator: "\n\n\n\n"
 
 # paginate
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 6
