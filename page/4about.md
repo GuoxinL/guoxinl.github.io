@@ -13,7 +13,4 @@ type: page
 
 ## 友情链接
 
-
-## Comments
-
 {% include comments.html %}
