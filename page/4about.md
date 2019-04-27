@@ -1,101 +1,81 @@
----
-layout: page
-title: About
-permalink: /about/
-icon: heart
-type: page
----
+## 个人资料
+ - 刘国新/男/1993
+ - 本科/东北农业大学成栋学院软件工程专业/2012-2016
+ - 工作年限：3年
+ - 期望职位：Java高级程序员，架构师
+ - 期望薪资：税前月薪20k
+ - 期望城市：北京
 
-* content
-{:toc}
+##  联系方式
+ - 手机：18612130100
+ - Email：lgx31@mail.cn
+ - 微信号：手机号即微信
+  
+## 工作经历
+### 埃洛克航空科技（北京）有限公司
+工作时间：2017.10~至今
+担任职责：空网后端研发负责人
 
-## 关于我
+#### DataEarth三维平台
+技术点：***Cesium***，***Srping Cloud***，***Srping Cloud Gateway***，***Nacos***，***Spring Boot***，***MongoDB***，，***MySQL***，***Redis***
+DataEarth是针对开发者的云端三维GIS平台。
+我在项目中主要负责后端网关的搭建，主要是基于***Spring Cloud Gateway***和Nacos实现了动态路由、自动化红绿发布、身份认证鉴权、超时熔断、这个项目的难点是在如何实现不停机发布？有些访问量大的项目都会部署2份或多份，之前的操作都是暴力停服，直接`kill -9 pid`，后来使用***Srping Cloud Gateway***提供的权重路由在部署之前先将需要更新部署应用的权重降低然后在平滑的部署项目。
 
-<iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+#### 中国空网APP(IOS/Android)
+技术点：***Spring Boot***，***Spring Cloud***，***WMS***，***WebSocket***，***Mybatis***，***MongoDB***，***MySQL***，***Redis***  
+中国空网APP
 
-就职于阿里巴巴，前端开发。
+#### 中国空网云匣子项目
+技术点：***Spring Boot***，***Netty***，***MyBatis***，***Spring Boot***，***Spring Cloud***  
+云匣子是一个给无人机提供定位追踪功能的模块，他可以以每秒一次的将当前无人机所在的位置（经纬度），海拔高度，航向角等相关数据发送到后端。
+本人主要负责的工作是数据收集系统（基于***Netty***的Tcp长连接服务）的以及云匣子周边业务的开发，这个项目最大的难度是我在接手这个项目的时候前任的代码写的很差数据收集系统耦合了大量的业务，我在保证了数据收集系统稳定运行的情况下重构了该项目，拆分了业务和数据收集模块，解决了这个棘手的问题，后期在总结的过程中抽象出面向业务的二进制流式通用传输协议（https://github.com/GuoxinL/protocol4java ）项目。
 
-主要兴趣集中在前端开发，大前端的概念深入我心。将更多的业务逻辑放在前端中，这很有趣。同时，将自己构想的内容实现出来，这种感觉很愉快。
+#### 中国空网空域地图服务项目
+技术点：***Geoserver***，***PostGis***，***WMS***，***JPA***，***AOP拦截请求/响应AES加解密***，***Spring Cloud***  
+本人主要负责地图服务的开发和维护，地图服务在空网后端的战略意义很大，地图服务负责空网三端（IOS，Android，PC）的地图显示，地图服务还负责保存所有业务中的空域数据，支持业务区域校验，支持云匣子数据校验本人在负责整体项目的调研与架构，以及后期开发和维护，这个项目最大的难点是在于中期使用过程中出现的坐标经度问题，因为对地理信息知识的不了解造成了坐标经度误差问题，后期在不断的测试和调研解决了坐标精度误差的问题
 
-热爱美好的事物，热爱摇滚乐，组过乐队，卖过唱。
+### 北京鑫丰南格科技有限公司
+工作时间：2016.01~2017.10  
+担任职责：后端研发，运维  
 
-很喜欢崔健的歌词：现实像块石头，精神像个蛋，石头虽然坚硬，可蛋里才是生命。
+#### C系列项目（床头呼叫系统）
+负责C系列（床头呼叫系统）的医护患模块和自动升级模块的开发和测试工作，在这个项目中最大的困难是整体项目在医院的运维工作，因为特定的环境下没有
+外网情况下的Linux以及Windows运维难度很大，以及使用了微型服务器配合Clonezilla达到拆箱部署的方法，解决的系统的人肉运维，后期负责C系列的重
+构以及将以往使用的Windows环境下部署迁移到Linux系统的部署工作。
 
-还有，学习是一个非常愉快的过程。共同加油！
+#### 蜂鸟系列（医护患交互系统前身是床头呼叫系统）
+技术点：***MongoDB***，***MySQL***，***Redis***，***Spring Boot***，***Spring Data(Mongo,QueryDSL,Redis)***，***MyBatis***，
+***ActiveMQ***，***OpenShip***  
+负责蜂鸟系列（医护患交互系统）的聊天模块，文章模块，科室模块，信息看板模块，文章模块，计费提醒模块，统一文件上传模块。
+项目中的一部分与日志相关的数据业务存储在MongoDB中例如呼叫记录，还有一部分存储在MySQL中MySQL中存储主要业务模块，例如计费模块，文章模块，信
+息看板模块等等，后端的框架主要使用的Spring Boot整合了Spring MVC，MyBatis，Spring Data(Mongo,QueryDSL,Redis)，使用Spring Boot 可
+以快速方便的对项目的配置节省开发时间。  
 
-* 2016.6.30 入职阿里巴巴
-* 2016.6 毕业于西安交通大学 软件工程硕士
-* 2015.12 获得2014-2015学年二等奖学金
-* 2015.7-2015.8 联想服务，前端开发工程师（实习生）
-* 2013.6 毕业于西安交通大学 理学院
-* 2001 获得西航四校总成绩年级排名第八名
+项目的持续集成主要使用了Jenkins对前后端项目的代码进行一键的打包部署的自动化，减少了人肉运维的痛苦。
+除了基本的代码工作在项目后期也担任项目的项目的运维工作，领导指示，要求把部署时间将到最短，达到让实施人员拿个U盘到某个医院在一天内就要将软硬
+件快速的实施完成，在我这部分工作中主要是将部署实现自动化，编写了服务所依赖的数据库和中间件的自动安装脚本
+（https://github.com/GuoxinL/installer ），以及Linux备份还原。  
+参与服务器的选型和定制，服务器的系统使用Ubuntu-server 16.04.02。
 
-## 联系我
+在物联网的后端最大的问题一部分是数据收集系统的稳定性，还有一部分是对于传输协议的定义，市面上普遍的协议定义方式主要有（mqtt协议，二进制自定
+协议）而公司内部使用的是二进制传输协议，在二进制协议定义的上面最普遍的做法是超前的预想业务和预留字段的方式，公司中有经验的
 
-* GitHub：[Gaohaoyang](https://github.com/Gaohaoyang)
-* email：gaohaoyang126@126.com
-* [Weibo](http://weibo.com/3115521wh)
-* [知乎](https://www.zhihu.com/people/gaohaoyang)
-* [Facebook](https://www.facebook.com/gaohaoyang.water)
-* [Twitter](https://twitter.com/gaohaoyang126)
-* [豆瓣](https://www.douban.com/people/42525035/)
-* [豆瓣音乐人-浩阳的小站](https://site.douban.com/haoyangaiyinyue/)
+## 开源项目
 
-## 关于本站
+ - [protocol4java](https://github.com/GuoxinL/protocol4java)：面向业务的二进制通用传输协议，提高开发效率，简化架构，更简单的指定协议
 
-**若您想使用这个 jekyll 博客主题，请访问：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+## 技能清单
 
-~欢迎使用~
+以下均为我熟练使用的技能
 
-欢迎大家提一些对本站主题的建议，可以直接在下面留言或者新建一个 [Issue](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues)。
+- 语言：Java(JDK1.8)/Dockerfile
+- 框架：Spring Boot/Spring Cloud/Spring Data(JPA,Mongo,QueryDSL,Redis)/MyBatis/Swagger/Netty/RocketMQ/Kafka
+- 开发工具：IntelliJIDEA/Whireshark/
+- SQL/NoSQL：MySQL/PgSQL/MongoDB/Redis
+- 版本管理、文档和自动化部署工具：Git/Jenkins/Docker
+- 云和开放平台：阿里云/AWS/钉钉消息
+- 其他相关技能：流程图/时序图/开发文档
 
-### Update Log
+## 自我评价 
 
-*2017.2.28*
-
-- `[^]` 修复目录滚动 bug [#22](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/22), [#48](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/48)
-
-*2016.6.20*
-
-* `[+]` 在文章页中添加上一篇和下一篇文章链接。
-* `[^]` 修改 font-family 顺序，避免微软雅黑将单引号解析为全角。
-* `[^]` 修复标签云算法中被除数为零的 bug。[#26](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/26), [#28](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/28), [#30](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/30)
-
-*2016.5.11 v2.0.1*
-
-* `[^]` 优化代码，将页面中的大段评论相关代码抽离出来，放入`comments.html`
-* `[+]` 添加百度统计和Google分析代码，在`_config.yml`中配置相关参数即可
-* `[+]` 更新文档，添加博客主题使用方法，便于上手
-* `[+]` 添加了`favicon.ico`
-* `[^]` 修复 bug，目录太长时，滚动到最底部时隐藏到footer下面。修复后长目录在滚动到底部时使用`position:absolute`
-* `[^]` 修改目录区的滚动条样式（仅针对`webkit`内核浏览器）
-* `[^]` 修改 demo 页中 disqus 评论区 a 标签的颜色 bug，修改 blockqoute 中 p 标签的 margin
-* `[+]` 添加不蒜子计数功能，在footer上显示访问量
-* `[+]` 添加回到顶部功能
-
-*2016.4.27 v2.0.0*
-
-* `[^]` 基于 jekyll 3.1.2 重构了所有代码
-* `[+]` 主页添加了摘要，在正文中使用4个换行符来分割，可在`_config.yml`中修改
-* `[+]` 主页添加了近期文章、分类列表和标签云
-* `[+]` 主页导航区做了视觉优化，阴影效果
-* `[+]` 增加了归档、标签和分类页面
-* `[+]` 增加了收藏页面
-* `[+]` 评论插件可以选择 disqus 或 多说，直接在`_config.yml`中修改
-* `[+]` 适配移动端
-* `[+]` 页面滚动时，文章目录固定在右侧
-* `[+]` 页面内容较少时，固定 footer 在页面底部
-* `[^]` 使用 GitHub 风格的代码高亮写法，即\`\`\`的写法，去除`highlight.js`代码高亮插件的使用
-* `[^]` 使用 Masonry 重写了 Demo 页中的瀑布流布局，响应式交互体验更好
-* `[-]` 去除了 jQuery 和 BootStrap，使得加载速度更快
-
-* 2016.3-2016.4 进行了一次大的改版和重构，详见 [README](https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/README.md) 和博文 [对这个 jekyll 博客主题的改版和重构](http://gaohaoyang.github.io/2016/03/12/jekyll-theme-version-2.0/)
-* 2015.3-2015.4 完成了这个博客主题的第一版。
-
-## 友情链接
-
-[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [薛彬XueBin](http://axuebin.com/blog/) \| [TBOOX](http://www.tboox.org/cn/) \|  [Ling](http://linglinyp.com/)
-
-## Comments
-
-{% include comments.html %}
+喜欢参加各种线下活动，在活动中学习了解学习新的技术交新朋友，喜欢打羽毛球，吊打产品（伪）^*^。
