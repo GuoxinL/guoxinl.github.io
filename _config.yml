@@ -35,7 +35,7 @@ gitalk:
   client_id: 3c88278e5d12079a9d87
   client_secret: 367f8880b02052157b8c40ffec4c4a9e2dafb36d
   repo: 'guoxinl.github.io'
-  owner: 'GuoxinL'
+  owner: 'Guoxin'
   admin: 'GuoxinL'
   distraction_free_mode: true
 
