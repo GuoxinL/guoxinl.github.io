@@ -1,4 +1,5 @@
 ---
+type: original
 layout: post
 title:  "MacOS 安装Jekyll"
 categories: Jekyll
