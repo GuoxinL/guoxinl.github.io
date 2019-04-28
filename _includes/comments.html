@@ -9,13 +9,13 @@
     var gitalk = new Gitalk({
 
         // gitalk的主要参数
-        clientID: '{{site.client_id}}',
-        clientSecret: '{{site.client_id}}',
-        repo: '{{site.client_id}}',
-        owner: '{{site.client_id}}',
-        admin: ['{{site.client_id}}'],
+        clientID: '{{site.gitalk.client_id}}',
+        clientSecret: '{{site.gitalk.client_id}}',
+        repo: '{{site.gitalk.client_id}}',
+        owner: '{{site.gitalk.client_id}}',
+        admin: ['{{site.gitalk.client_id}}'],
         id: window.location.id,
-
+        distractionFreeMode: '{{ site.gitalk.distraction_free_mode }}'
     });
     gitalk.render('gitalk-container');
 </script>
