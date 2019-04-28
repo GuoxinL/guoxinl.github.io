@@ -9,12 +9,12 @@
     var gitalk = new Gitalk({
 
         // gitalk的主要参数
-        clientID: '65d47b97578aea77f467',
-        clientSecret: '06dde32131deff7886b9753234d82ba653f04cd0',
-        repo: 'guoxinl.github.io',
-        owner: 'GuoxinL',
-        admin: ['GuoxinL'],
-        id: 'post.url',
+        clientID: '{{site.client_id}}',
+        clientSecret: '{{site.client_id}}',
+        repo: '{{site.client_id}}',
+        owner: '{{site.client_id}}',
+        admin: ['{{site.client_id}}'],
+        id: window.location.id,
 
     });
     gitalk.render('gitalk-container');
