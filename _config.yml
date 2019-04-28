@@ -33,7 +33,7 @@ disqus_shortname:
 gitalk:
   enable: true
   client_id: 3c88278e5d12079a9d87
-  gitalk_secret: 367f8880b02052157b8c40ffec4c4a9e2dafb36d
+  client_secret: 367f8880b02052157b8c40ffec4c4a9e2dafb36d
   gitalk_repo: 'guoxinl.github.io'
   gitalk_owner: 'GuoxinL'
   gitalk_admin: 'GuoxinL'
