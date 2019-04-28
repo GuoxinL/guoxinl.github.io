@@ -5,7 +5,7 @@ layout: default
 <div class="page clearfix" index>
     <div class="left">
         <h1>Welcome to Guoxin Blog!</h1>
-        <small>记录工作与生活的点点滴滴~</small>
+        <small>{% if site.description %} {{site.description}} {% endif %}</small>
         <hr>
         <ul>
             {% for post in paginator.posts %}
