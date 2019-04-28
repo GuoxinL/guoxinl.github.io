@@ -7,14 +7,11 @@
 <div id="gitalk-container"></div>
 <script type="text/javascript">
     var gitalk = new Gitalk({
-
-        // gitalk的主要参数
         clientID: '{{site.gitalk.client_id}}',
         clientSecret: '{{site.gitalk.client_secret}}',
-        repo: '{{site.gitalk.gitalk_repo}}',
-        owner: '{{site.gitalk.Guoxin}}',
-        admin: ['{{site.gitalk.GuoxinL}}'],
-        id: window.location.id,
+        repo: '{{site.gitalk.repo}}',
+        owner: '{{site.gitalk.owner}}',
+        admin: ['{{site.gitalk.admin}}'],
         distractionFreeMode: '{{ site.gitalk.distraction_free_mode }}'
     });
     gitalk.render('gitalk-container');

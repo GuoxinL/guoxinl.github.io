@@ -34,9 +34,9 @@ gitalk:
   enable: true
   client_id: 3c88278e5d12079a9d87
   client_secret: 367f8880b02052157b8c40ffec4c4a9e2dafb36d
-  gitalk_repo: 'guoxinl.github.io'
-  gitalk_owner: 'GuoxinL'
-  gitalk_admin: 'GuoxinL'
+  repo: 'guoxinl.github.io'
+  owner: 'GuoxinL'
+  admin: 'GuoxinL'
   distraction_free_mode: true
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
