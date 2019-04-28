@@ -21,8 +21,9 @@ type: page
 - [操作系统，下载资源](https://msdn.itellyou.cn/)
 - [Coordinate Systems Worldwide(坐标转换)](http://epsg.io)
 - [Make a Pixel Speech Bubble(像素风气泡)](https://pixelspeechbubble.com/)
-- [8biticon | Make Your Own Pixel-Art Avatar (像素风头像)](https://8biticon.com/)
+- [8biticon\Make Your Own Pixel-Art Avatar (像素风头像)](https://8biticon.com/)
 
 ## 娱乐
 - [魔方小站](http://www.rubik.com.cn/)
+
 {% include comments.html %}
